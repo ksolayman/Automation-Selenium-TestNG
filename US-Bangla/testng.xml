@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="/Users/SQA/Project/Selenium/Project/US-Bangla">
+        <classes>
+            <class name="com.usbair.Home">
+                <methods>
+                    <include name="Title_Check"/>
+                    <include name="Check_Url"/>
+                    <include name="isDisplayFlightTo"/>
+                    <include name="isDisplayTripType"/>
+                    <include name="isDisplayDepartingDate"/>
+                    <include name="isDisplayReturningDate"/>
+                    <include name="isDisplayPassenger"/>
+                    <include name="isDisplay_Search"/>
+                    <include name="isSearchButtonEnable"/>
+                    <include name="isDisplayLogo"/>
+                    <include name="isClickLogo"/>
+                </methods>
+            </class>
+            <class name="com.usbair.Login">
+                <methods>
+                    <include name="SetupBrowser"/>
+                    <include name="LogSkystar"/>
+                    <include name="LogUserSkystar"/>
+                    <include name="LogPassSkystar"/>
+                    <include name="SkystarLogBtnEnble"/>
+                    <include name="LogButtonSkystar"/>
+                    <include name="SkystarForgetPassEnble"/>
+                    <include name="SkystarNewAccEnble"/>
+                    <include name="MoveSignUpAsSkystar"/>
+                    <include name="LogWarningMeg"/>
+                </methods>
+            </class>
+            <class name="com.usbair.Search">
+                <methods>
+                    <include name="SearchFrom"/>
+                    <include name="SearchTo"/>
+                    <include name="TripType"/>
+                    <include name="DepartingDate"/>
+                    <include name="ReturningDate"/>
+                    <include name="PassengerList"/>
+                    <include name="SearchFlight"/>
+                </methods>
+            </class>
+            <class name="com.usbair.CreateAccount">
+                <methods>
+                    <include name="SetupBrowser"/>
+                    <include name="RegSS"/>
+                    <include name="SSLogin"/>
+                    <include name="SSPassword"/>
+                    <include name="SSCPassword"/>
+                    <include name="SSTitle"/>
+                    <include name="SSSurname"/>
+                    <include name="SSFirstName"/>
+                    <include name="SSEmailAddress"/>
+                    <include name="SSBirthDate"/>
+                    <include name="SSPhone"/>
+                    <include name="SSCheckBox"/>
+                    <include name="SSSubmitEnable"/>
+                    <include name="SSSignupLink"/>
+                    <include name="SSSubmitFrom"/>
+                    <include name="MoveLoginAsSS"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
