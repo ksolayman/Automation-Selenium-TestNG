@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="Customer Login">
+        <classes>
+            <class name="CustomerLoginFunctionality.CustomerLogin">
+                <methods>
+                    <include name="MoveToRegistrationPage"/>
+                    <include name="HoverLoginButton"/>
+                    <include name="LoginValidCredentials"/>
+                    <include name="OneInvalidCredentials"/>
+                    <include name="LoginInvalidCredentials"/>
+                    <include name="NavigateBack"/>
+                    <include name="LogOut"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="Home Page">
+        <classes>
+            <class name="HomepageFunctionality.HomePage">
+                <methods>
+                    <include name="CheckTitle"/>
+                    <include name="VerifyLogo"/>
+                    <include name="CheckSearchBox"/>
+                    <include name="CheckProduct"/>
+                    <include name="isSearchButtonEnabled"/>
+                    <include name="SearchProduct"/>
+                    <include name="BackToHome"/>
+                    <include name="LanguageChange"/>
+                    <include name="ProductOrder"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="Customer Registration Page">
+        <classes>
+            <class name="CustomerRegistrationpageFunctionality.CustomerRegistrationPage">
+                <methods>
+                    <include name="MoveToRegistrationPage"/>
+                    <include name="RegistrationWithoutCredentials"/>
+                    <include name="RegistrationUsingInvalidName"/>
+                    <include name="RegistrationUsingInvalidMobileNumber"/>
+                    <include name="RegistrationUsingInvalidPassword"/>
+                    <include name="RegistrationUsingInvalidEmail"/>
+                    <include name="RegistrationUsingAllValidCredentials"/>
+                    <include name="RegistrationUsingMandatoryCredentials"/>
+                    <include name="isSearchButtonDisplayed"/>
+                    <include name="isSearchButtonEnabled"/>
+                    <include name="RegistrationAgainWithSameCredentials"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

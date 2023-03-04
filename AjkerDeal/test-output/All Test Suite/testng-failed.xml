@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Customer Registration Page(failed)">
+    <classes>
+      <class name="CustomerRegistrationpageFunctionality.CustomerRegistrationPage">
+        <methods>
+          <include name="RegistrationUsingAllValidCredentials"/>
+          <include name="getDriver"/>
+          <include name="RegistrationUsingInvalidPassword"/>
+          <include name="RegistrationUsingInvalidEmail"/>
+          <include name="quitDriver"/>
+          <include name="isSearchButtonEnabled"/>
+          <include name="RegistrationAgainWithSameCredentials"/>
+          <include name="RegistrationUsingInvalidMobileNumber"/>
+          <include name="RegistrationUsingMandatoryCredentials"/>
+          <include name="RegistrationWithoutCredentials"/>
+          <include name="RegistrationUsingInvalidName"/>
+          <include name="isSearchButtonDisplayed"/>
+        </methods>
+      </class> <!-- CustomerRegistrationpageFunctionality.CustomerRegistrationPage -->
+    </classes>
+  </test> <!-- Customer Registration Page(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->
