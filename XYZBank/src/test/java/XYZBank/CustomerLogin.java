@@ -41,7 +41,7 @@ public class CustomerLogin {
 
         //    String date = new SimpleDateFormat("MMM-dd-yyyy").format(new Date());
         File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-        File dest = new File("/Users/SQA/Project/Selenium/Project/XYZBank/ScreenShots/XYZBank.CustomerLogin/"+fileName+".png");
+        File dest = new File(System.getProperty("user.dir")+"/ScreenShots/XYZBank.CustomerLogin/"+fileName+".png");
         FileUtils.copyFile(src,dest);
 
         System.out.println("Screenshot is captured");

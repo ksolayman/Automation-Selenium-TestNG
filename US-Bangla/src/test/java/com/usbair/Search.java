@@ -32,7 +32,7 @@ public class Search {
         String timeStamp = new SimpleDateFormat("dd-MM-yyyy_hh:mm:ss").format(new Date());
 
         File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-        File trg = new File("/Users/SQA/Project/Selenium/Project/US-Bangla/ScreenShots/Search/" +fileName+ " " +timeStamp+".png");
+        File trg = new File(System.getProperty("user.dir")+"/ScreenShots/Search/" +fileName+ " " +timeStamp+".png");
         FileUtils.copyFile(src, trg);
 
     }

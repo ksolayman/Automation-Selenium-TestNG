@@ -20,7 +20,7 @@ public class Login {
     String url = "https://usbair.com/";
     String clickLogin = "(//p[@class='font-normal font-roboto text-footerDescriptionBottomPart'])[1]";
     String skyStar = "(//div[normalize-space()='Sky Star'])[1]";
-    String ssLoc = "/Users/SQA/Project/Selenium/Project/US-Bangla/ScreenShots/Login/";
+    String ssLoc = System.getProperty("user.dir")+"/ScreenShots/Login/";
 
     @BeforeMethod
     public void LunchBrowser() throws InterruptedException {
